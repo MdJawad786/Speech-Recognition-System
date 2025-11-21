@@ -121,9 +121,10 @@ FFmpeg
 
 GUI (tkinter)
 
-*OUTPUT*:
+OUTPUT:
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e72f3a1c-2122-4a0e-9b9a-e9f48228ca14" />
+
 
 
 🙌 Contribution
@@ -132,6 +133,6 @@ Contributions, issues, and feature requests are welcome.
 
 🧑‍💻 Author
 
-Mohd Jawad
+Mohd Jawad.
 Artificial Intelligence Intern,
 CodeTech IT Solutions.
