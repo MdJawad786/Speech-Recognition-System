@@ -133,6 +133,6 @@ Contributions, issues, and feature requests are welcome.
 
 🧑‍💻 Author
 
-Mohd Jawad.
+Mohd Jawad. B.Tech (I.T), TKR COLLEGE OF ENG. & TECH., HYDERABAD.
 Artificial Intelligence Intern,
 CodeTech IT Solutions.
