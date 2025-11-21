@@ -1,0 +1,32 @@
+# Core speech recognition library
+SpeechRecognition==3.10.0
+
+# Audio processing
+pydub==0.25.1
+
+# Microphone access (choose based on your OS)
+PyAudio==0.2.14  # For Windows/Linux
+# pyaudio-binary==0.2.14  # Alternative for easier installation
+
+# Advanced models (optional but recommended)
+transformers==4.35.0
+torch==2.1.0
+torchaudio==2.1.0
+
+# For Wav2Vec2 model support
+datasets==2.14.0
+librosa==0.10.1
+soundfile==0.12.1
+
+# Additional utilities
+numpy==1.24.3
+scipy==1.11.3
+
+# For better audio format support
+ffmpeg-python==0.2.0
+
+
+
+# Optional: For GUI version
+# PyQt5==5.15.9
+# tkinter (usually comes with Python)
