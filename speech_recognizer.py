@@ -35,9 +35,9 @@ class SpeechRecognizer:
         if self.engine == "wav2vec2":
             self._load_wav2vec2_model()
 
-    # -------------------------------------------------------
+    # -----------------------------------------------------------------------------------------------------------
     # Wav2Vec2 Model Loader
-    # -------------------------------------------------------
+    # -----------------------------------------------------------------------------------------------------------
     def _load_wav2vec2_model(self):
         """Load Wav2Vec2 model (offline engine)"""
 
@@ -69,9 +69,9 @@ class SpeechRecognizer:
             self.logger.error(f"Error loading Wav2Vec2 model: {e}")
             raise
 
-    # -------------------------------------------------------
+    # --------------------------------------------------------------------------------------------------
     # Main Recognition Function
-    # -------------------------------------------------------
+    # --------------------------------------------------------------------------------------------------
     def recognize(self, audio_data):
         """
         Recognize speech from audio_data (AudioData object)
@@ -91,9 +91,9 @@ class SpeechRecognizer:
             self.logger.error(f"Recognition error: {e}")
             return None
 
-    # -------------------------------------------------------
+    # ------------------------------------------------------------------------------------
     # Google Speech Recognition
-    # -------------------------------------------------------
+    # ------------------------------------------------------------------------------------
     def _recognize_google(self, audio_data):
         """Recognize using Google Web Speech API"""
 
@@ -101,9 +101,9 @@ class SpeechRecognizer:
 
         return self.recognizer.recognize_google(audio_data, language=self.language)
 
-    # -------------------------------------------------------
+    # ------------------------------------------------------------------------------------
     # CMU Sphinx (Offline)
-    # -------------------------------------------------------
+    # ------------------------------------------------------------------------------------
     def _recognize_sphinx(self, audio_data):
         """Recognize using CMU Sphinx (offline)"""
 
@@ -114,9 +114,9 @@ class SpeechRecognizer:
         except Exception:
             return "Sphinx engine unavailable — install pocketsphinx"
 
-    # -------------------------------------------------------
+    # ------------------------------------------------------------------------------------
     # Wav2Vec2 Speech Recognition (Offline)
-    # -------------------------------------------------------
+    # ------------------------------------------------------------------------------------
     def _recognize_wav2vec2(self, audio_data):
         """Recognize speech using Wav2Vec2 transformer model"""
 
@@ -141,3 +141,4 @@ class SpeechRecognizer:
         transcription = self.tokenizer.decode(predicted_ids[0])
 
         return transcription.replace("|", " ").strip()
+
